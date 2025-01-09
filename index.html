@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - TGGENCO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      padding: 10px 30px;
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      box-shadow: none;
+    }
+
+    .header-container .logo-left{
+      width: 100px;
+      height: auto;
+      margin: 0 10px;
+    }
+
+    .header-container .logo-right {
+      width: 80px;
+      height: auto;
+      margin: 0 10px;
+    }
+
+    .header-container .text-center {
+      text-align: center;
+      
+    }
+
+    .header-container h1 {
+      font-size: 24px;
+      color: #004085;
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    .header-container h2 {
+      font-size: 16px;
+      color: #2b2a4d;
+      margin: 0;
+    }
+
+    .login-container {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 0; /* No rounded corners */
+      padding: 30px;
+      width: 400px;
+      margin-top: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    }
+
+    .login-container h3 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container .form-label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .login-container button {
+      background: #97bde6;
+      border: none;
+      color: white;
+      padding: 10px 0;
+      font-size: 16px;
+      border-radius: 0; /* No rounded corners */
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background: #004085;
+    }
+
+    .login-container #error-message {
+      color: red;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header-container">
+    <img src="TGGENCO_LOGO1.jpg" alt="Left Logo" class="logo-left">
+    <div class="text-center">
+      <h1>Telangana Power Generation Corporation Limited</h1>
+      <h2>Vidyut Soudha : Hyderabad-500082</h2>
+      <h2>Telangana State : INDIA</h2>
+    </div>
+    <img src="TelanganaRising.png" alt="Right Logo" class="logo-right">
+  </div>
+
+  <!-- Login Form -->
+  <div class="login-container">
+    <h3>User Login</h3>
+    <form id="login-form">
+      <div class="mb-3">
+        <label for="userID" class="form-label">User ID</label>
+        <input type="text" id="userID" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-control" required>
+      </div>
+      <button type="submit" class="w-100">Login</button>
+      <p id="error-message"></p>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-text">
+    Copyright © TGGENCO | All Rights Reserved
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
